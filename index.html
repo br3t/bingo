@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Лото</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="js/lodash.min.js"></script>
+	<script type="text/javascript" src="js/loto.js"></script>
+</head>
+<body class="wait">
+	<audio id="number-audio">
+		<source src="" type="audio/mpeg">
+	</audio>
+	<div id="number-display">
+	</div>
+	<div class="wrapper">
+		Интервал: <input type="number" value="3" id="interval" />сек<br />
+		<input value="Начать" id="start" type="button" />
+		<input value="Пауза" id="pause" type="button" />
+		<input value="Продолжить" id="resume" type="button" />
+		<input value="Закончить" id="finish" type="button" /><br />
+		<input value="Показать/скрыть цифры" id="showHide" type="button" />
+		<div class="numbrs"></div>
+	</div>
+</body>
+</html>

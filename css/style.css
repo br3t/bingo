@@ -1,0 +1,55 @@
+body {
+	background: #000;
+	margin: 0;
+}
+
+#start,
+#pause,
+#finish,
+#resume,
+.numbrs {
+	display: none;
+}
+.wait #start,
+.play #pause,
+.play #finish,
+.pause #resume,
+.pause #finish {
+	display: inline;
+}
+.wrapper {
+	width: 250px;
+	position: absolute;
+	background: rgba(255,255,255, 0.5);
+	right: 0;
+	padding: 10px;
+}
+#interval {
+	width: 30px;
+}
+#number-display {
+	width: 100%;
+	font-size: 180px;
+	text-align: center;
+	line-height: 300px;
+	font-family: Verdana;
+	position: absolute;
+	color: #FFF;
+	text-shadow: 0 0 50px #0F0;
+	opacity: 1;
+	-webkit-transition: all 100ms ease;
+	transition: all 100ms ease;
+}
+#number-display.blink {
+	opacity: 0;
+	-webkit-transition: all 100ms ease;
+	transition: all 100ms ease;
+}
+.numbrs {
+	max-height: 500px;
+	overflow: auto;
+	padding: 5px;
+}
+.numbrs:hover {
+	background: #FFF;
+}
