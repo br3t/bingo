@@ -12,10 +12,14 @@
 	<audio id="number-audio">
 		<source src="" type="audio/mpeg">
 	</audio>
-	<div id="number-display">
-	</div>
+	<div id="number-display">&#9654;</div>
 	<div class="wrapper">
-		Интервал: <input type="number" value="3" id="interval" />сек<br />
+		Интервал: <input type="number" value="3" id="interval" step="0.5" />сек<br />
+		Голос: <select id="voice">
+			<option value="google">Google Ж</option>
+			<option value="voice21">Максим</option>
+			<option value="petrHumster">Петр-Хомяк</option>
+		</select><br />
 		<input value="Начать" id="start" type="button" />
 		<input value="Пауза" id="pause" type="button" />
 		<input value="Продолжить" id="resume" type="button" />
